@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 float function(float x){
-    return 5*(x*x*x) - 3*(x*x) + 2*x + 1;
+    return 2*x;
 }
 
 float absVal(float x){
@@ -21,7 +21,7 @@ int main(){
     int i =2;
     float s1 = function(x1) + function(x2);
     float s2 = 0;
-    s4 = function((x1+h));
+    float s4 = function((x1+h));
     float i0 = 0;
     float in = (s1 + 4*s4)*(h/3);
 
@@ -35,7 +35,7 @@ int main(){
         }
         h = h/2;
         i = 2*i;
-        i0 = i1;
+        i0 = in;
         in = (s1+2*s2+4*s4)*(h/3);
     }while(relErr(in, i0)>e);
 

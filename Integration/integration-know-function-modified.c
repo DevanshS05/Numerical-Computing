@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 float function(float x){
-    return 5*(x*x*x) - 3*(x*x) + 2*x + 1;
+    //return 5*(x*x*x) - 3*(x*x) + 2*x + 1;
+    return 2*x;
 }
 
 float absVal(float x){
@@ -13,12 +14,12 @@ float relErr(float x1, float x2){
 }
 
 int main(){
-    const float err = 0.001;
+    const float e = 0.001;
     int i = 2;
     float x1, x2;
     printf("Please enter the value of x1 and x2: ");
     scanf("%f %f",&x1, &x2);
-    float h = x2 -x1;
+    float h = (x2 -x1)/2;
     float s1 = (function(x1) + function(x2))/2;
     float i1 = h*s1;
     float i0 = i1;
@@ -34,6 +35,6 @@ int main(){
         h = h/2;
         i0 = i1;
         i1 = (h*s1);
-    }whhile(relErr(i1, io)>e);
+    }while(relErr(i1, i0)>e);
     printf("The value of the integral obtained is: %f with h=%f, i=%d", i1, h, i);
 }
