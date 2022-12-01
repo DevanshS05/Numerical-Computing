@@ -24,6 +24,11 @@
     + When both limits are given
     + Using Simpson's Rule
   + Gauss Legendre 5-Point-Formula
++ Numerical Solutions to  Differential Equations
+  + Heun's Method
+  + Polygon Method
+  + Predictor-Corrector Method
+  
 
 
 
