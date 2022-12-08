@@ -1,7 +1,6 @@
 #include<stdio.h>
 
 float function(float x){
-    //return 5*(x*x*x) - 3*(x*x) + 2*x + 1;
     return 2*x;
 }
 

@@ -41,6 +41,5 @@ int main(){
 		x0 = x1;
 	}
 	printf("\nDoes not converge in n iterations");
-	getch();
 	return 0;
 }

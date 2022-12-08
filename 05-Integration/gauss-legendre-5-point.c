@@ -24,7 +24,6 @@ int main(){
     for(int i=0;i<n;i++){
         float f = function((p+q*x[i]));
         integral += R[i]*f;
-        printf("\nDeubdding at i=%d, calvc val=%f",i+1, R[i]*f);
     }
     integral = q*integral;
     printf("The value of the integral so obtained is: %f", integral);
